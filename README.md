@@ -2,7 +2,7 @@
 
 ## Data Augmentation tool for Deep Learning algorithms 
 
-![Image1_DA](https://raw.githubusercontent.com/iberganzo/ArchaeolDA/main/Images/Image1_DA.png?token=GHSAT0AAAAAAB7NPSMRRRDUIXU55XP5VK5UY77BI4Q)
+![Image1_DA](https://user-images.githubusercontent.com/75735764/222118906-95a9c04b-992e-4d36-b677-7c8ac4f46f3b.png)
 
 Data Augmentation (DA) is a technique to MULTIPLY the small amount of training dataset by creating new data from it in order to train your Deep Learning (DL) algorithm, as it is common in Computational Archaeology. This tool is designed for the Mask R-CNN segmentation algorithm entry but the code can be adapted to others.
 
