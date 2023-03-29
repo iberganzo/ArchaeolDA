@@ -93,7 +93,9 @@ for iFile in range(0,len(file_list),1):
 		for j7 in range(0, col4_0, 1):
 			for iTesela in range(1, iTeselaMax, 1):
 				if txtFile4A0[i7,j7] == (tesela*iTesela):
-					txtFile4A0[i7,j7]=(tesela*iTesela)-1
+					txtFile4A0[i7,j7] = (tesela*iTesela)-1
+				if txtFile4A0[i7,j7] < 0:
+					txtFile4A0[i7,j7] = 1
 
 	for i8 in range(0, row4_0, 1):
 		for j8 in range(0, col4_0, 1):
