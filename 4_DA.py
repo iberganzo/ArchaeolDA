@@ -107,8 +107,8 @@ if createBackImages !=2:
   for iFile in range(0,len(file_list),1):
     [imName,imExt] = os.path.splitext("%s" %file_list[iFile])
     img = cv2.imread(os.path.join(pathDataImg,"%s" %file_list[iFile]))
-  for num1 in range(1,numBacksImg+1,1):
-    cv2.imwrite(os.path.join(pathDataImgBacks, "back%d.png" %(1+iFile+(len(file_list)*(num1-1)))),img)
+    for num1 in range(1,numBacksImg+1,1):
+      cv2.imwrite(os.path.join(pathDataImgBacks, "back%d.png" %(1+iFile+(len(file_list)*(num1-1)))),img)
 
 print("Background images created")
 
