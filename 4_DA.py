@@ -222,8 +222,8 @@ for i3 in range(backImagesNumberIni, backImagesNumber+1, 1):
 
     if daResize != 0:
       nS = random.randint(minResized,maxResized) # Random size in pixels
-      nS1 = random.randint(minResized,sR1) # Only increasing
-      nS2 = random.randint(sR1,maxResized) # Only decreasing
+      nS1 = random.randint(minResized,sR1)
+      nS2 = random.randint(sR1,maxResized)
       #nS = random.choice([sR1, sR1, sR1, sR1, sR1, nS1, nS1, nS1, nS2, nS2]) # 50% chance to remain equal, 30% to decrease, 20% to increase
       if daResize == 1:
         if daElastic == 0:
