@@ -145,8 +145,8 @@ for i3 in range(backImagesNumberIni, backImagesNumber+1, 1):
 
     # DA Translation #
 
-    nX = random.randint((2*margin),sizeX-(2*margin)) # Random movement in x axis
-    nY = random.randint((2*margin),sizeY-(2*margin)) # Random movement in y axis
+    nX = random.randint(margin,sizeX-margin) # Random movement in x axis
+    nY = random.randint(margin,sizeY-margin) # Random movement in y axis
     
     # DA Rotation #
 
