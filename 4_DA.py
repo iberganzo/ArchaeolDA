@@ -126,7 +126,8 @@ for i3 in range(backImagesNumberIni, backImagesNumber+1, 1):
   sizeX = width # Objects image pixel size in x axis
   sizeY = height # Objects image pixel size in y axis
 
-  txtFile3 = np.zeros(shape=(cropImagesPerBackImages,maxPointsNumber))
+  txtFile3 = np.ones(shape=(cropImagesPerBackImages,maxPointsNumber))
+  txtFile3 = txtFile3 * -9999
   back_im = im1.copy()
 
   iPoly=0; iPolyCount=0; overlappingPolys=np.zeros(shape=(3*cropImagesPerBackImages,4))
@@ -550,7 +551,8 @@ print("Synthetic image created")
 
 for i6 in range(backImagesNumberIni, backImagesNumber+1, 1):
   txtFile3 = np.loadtxt("4_DA/synthetic/synthAux%d.txt" %i6, dtype=int)
-  txtFile4 = np.zeros(shape=(cropImagesPerBackImages*2,maxPointsNumber))
+  txtFile4 = np.ones(shape=(cropImagesPerBackImages*2,maxPointsNumber))
+  txtFile4 = txtFile4 * -9999
   if cropImagesPerBackImages == 1:
     col3 = txtFile3.shape
     row3 = 1
