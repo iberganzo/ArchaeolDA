@@ -51,7 +51,8 @@ for iFile in range(0,len(file_list3),1):
 
 	mylinesNumbersSize1 = mylines[0].count("[")
 	mylinesNumbersSize2 = mylines[0].count(",")
-	mylinesNumbers = np.zeros(shape=(mylinesNumbersSize1,mylinesNumbersSize2))
+	mylinesNumbers = np.ones(shape=(mylinesNumbersSize1,mylinesNumbersSize2))
+	mylinesNumbers = mylinesNumbers * -9999
 
 	for i1 in range(0, mylinesNumbersSize2, 1):
 		if mylines[0].split(",")[i1].strip() == ']':
@@ -64,7 +65,7 @@ for iFile in range(0,len(file_list3),1):
 
 	row, col = mylinesNumbers.shape
 	for j1 in range(0, col-1, 1):
-		if np.mean(mylinesNumbers[:,j1]) == 0 and zeroPos == 0:
+		if np.mean(mylinesNumbers[:,j1]) == -9999 and zeroPos == 0:
 			zeroPos=j1
 	mylinesNumbers = mylinesNumbers[:,0:zeroPos];
 	mylinesNumbers = mylinesNumbers.astype(int)
@@ -72,6 +73,10 @@ for iFile in range(0,len(file_list3),1):
 	np.savetxt("2_Polygons/prepro/%s_prepro.txt" %imName, mylinesNumbers, fmt="%d", delimiter=" ")
 
 	row2, col2 = mylinesNumbers.shape
+	for i in range (0, row2, 1):
+		for j in range (0, col2, 1):
+			if mylinesNumbers[i,j] == -9999:
+				mylinesNumbers[i,j] = 0
 	col2 = col2 + 1
 	mylinesNumbersI = np.zeros(shape=(int(row2/2),col2))
 	mylinesNumbersB = mylinesNumbersI.astype(str)
