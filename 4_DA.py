@@ -283,6 +283,12 @@ for i3 in range(backImagesNumberIni, backImagesNumber+1, 1):
     xminrD = int(xminrD0 - (xminrD0 - xmint))
     yminrD = int(yminrD0 - (yminrD0 - ymint))
 
+    # Outside Avoidance #
+    
+    outside1 = 0
+    if xminrD + sxD >= sizeX or xminrD <= 0 or yminrD + syD >= sizeY or yminrD <= 0:
+      outside1 = 1
+    
     # Overlap Avoidance #
 
     overlappingPolys[iPoly,0] = xminrD # xmin
@@ -316,7 +322,7 @@ for i3 in range(backImagesNumberIni, backImagesNumber+1, 1):
       if ((overlap1X+overlap1Y>=2) and (overlap1X*overlap1Y != 0)):
         overlap1 = 1
 
-    if overlap1 == 0:
+    if overlap1 == 0 and outside1 == 0:
       
       # DA Doppelgänger #
 
