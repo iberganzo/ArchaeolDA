@@ -200,7 +200,7 @@ Orengo, H.A.; Garcia-Molsosa, A.; Berganzo-Besga, I.; Landauer, J.; Aliende, P.;
 ```
 
 ```ini
-Berganzo-Besga, I.; Orengo, H.A.; Lumbreras, F.; Alam, A.; Campbell, R.; Gerrits, P.J.; Gregorio de Souza, J.; Khan, A.; Suárez-Moreno, M.; Tomaney, J.; Roberts, R.C., Petrie, C.A. Curriculum Learning-based Strategy for Archaeological Mound Features Detection from Historical Maps in Low-Density Areas in India and Pakistan. Sci. Rep. 2023, submitted.
+Berganzo-Besga, I.; Orengo, H.A.; Lumbreras, F.; Alam, A.; Campbell, R.; Gerrits, P.J.; Gregorio de Souza, J.; Khan, A.; Suárez-Moreno, M.; Tomaney, J.; Roberts, R.C., Petrie, C.A. Curriculum learning-based strategy for low-density archaeological mound detection from historical maps in India and Pakistan. Sci Rep 13, 11257 (2023). https://doi.org/10.1038/s41598-023-38190-x
 ```
 
 ![Image14_TheEnd](https://user-images.githubusercontent.com/75735764/222122766-5bfa6b09-9001-4c8f-9585-e2eafb08bab8.png)
