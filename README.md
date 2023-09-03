@@ -18,7 +18,7 @@ Mask R-CNN: https://github.com/matterport/Mask_RCNN
 
 VIA: https://www.robots.ox.ac.uk/~vgg/software/via/via_demo.html
 
-As an example, to understand the workflow, we will detect different Greek sculptures in pictures from the hand of Homer Simpson.
+As an example, to understand the workflow, we will detect different Greek sculptures in pictures by the hand of Homer Simpson.
 
 ![Image3_DA](https://user-images.githubusercontent.com/75735764/222122147-3a9495fe-8ba8-466a-962c-c27775d570c5.png)
 
