@@ -6,7 +6,9 @@
 
 Data Augmentation (DA) is a technique to MULTIPLY the small amount of training dataset by creating new data from it in order to train your Deep Learning (DL) algorithm, as it is common in Computational Archaeology.
 
-The methods developed here are random translation, rotation, resizing, elastic deformation, the so-called Doppelgänger technique, and refinement. This tool is designed for the Mask R-CNN segmentation algorithm entry (Waleed, 2017) but the code can be adapted to others.
+The methods developed here are random translation, rotation, resizing, elastic deformation, the so-called Doppelgänger technique, and refinement. This tool is designed for the Mask R-CNN segmentation algorithm entry (Waleed, 2017) but the code can be adapted to others like YOLO using VIAtoYOLO.
+
+VIAtoYOLO: https://github.com/iberganzo/VIAtoYOLO
 
 Mask R-CNN: https://github.com/matterport/Mask_RCNN
 
